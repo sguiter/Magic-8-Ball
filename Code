@@ -1,21 +1,22 @@
 import random
+
 def generate_random_response():
- responses = ["It is decidedly so", "Without a doubt", "Yes definitely", "You may rely on it", "My reply 
-is no", "My sources say no", "Outlook not so good", "Very doubtful"]
- return random.choice(responses)
+  responses = ["It is decidedly so", "Without a doubt", "Yes definitely", "You may rely on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"]
+  return random.choice(responses)
 def main():
  print("Welcome to the Magic 8 Ball!")
  
  while True:
- user_input = input("Ask a question: ")
- response = generate_random_response()
- print(response)
+  # The code within the while loop needs to be indented
+  user_input = input("Ask a question: ")
+  response = generate_random_response()
+  print(response)
  
- another_question = input("Do you want to ask another question? (yes/no): ")
- print()
+  another_question = input("Do you want to ask another question? (yes/no): ")
+  print()
  
- if another_question.lower() != 'yes':
- print("Ending the session.")
- break
+  if another_question.lower() != 'yes':
+   print("Ending the session.")
+   break
 if __name__ == "__main__":
  main()
